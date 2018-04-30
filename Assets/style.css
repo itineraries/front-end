@@ -690,7 +690,6 @@ input[type=text]:focus {
     border: 3px solid #555;
 }
 
-<<<<<<< HEAD
 .first-account-image {
     background-image: url("NYU_White_Bus-Passenger.png");
     background-repeat: no-repeat;
@@ -771,8 +770,6 @@ input[type=text]:focus {
     margin: 6px 4px;
     cursor: pointer;
 }
-=======
->>>>>>> c6a94b9f6935c54838267a4f059a28f5f94468ac
 
 .first-logout-image {
     background-image: url("NYU_White_Bus-Driver.png");
