@@ -691,7 +691,7 @@ input[type=text]:focus {
 }
 
 .first-account-image {
-    background-image: url("NYU_White_Bus-Passenger.png");
+    background-image: url("NYU_White_Bus-Passenger.jpg");
     background-repeat: no-repeat;
     
     display: block;
@@ -815,7 +815,7 @@ input[type=text]:focus {
 }
 
 .first-error-404-image {
-    background-image: url("NYU_White_Bus-Not_in_Service.png");
+    background-image: url("NYU_White_Bus-Not_in_Service.jpg");
     background-repeat: no-repeat;
     
     display: block;
