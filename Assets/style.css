@@ -1,14 +1,15 @@
+h1, h2, p, ul, button, label, .custom-select, .footer-one, .footer-two {
+	font-family: "Avenir", "Segoe UI", Arial, sans-serif;
+}
+
 h1 {
-	font-family: "Avenir";
 	font-size: 10vw;
 }
 
 h2 {
-	font-family: "Avenir";
 	font-size: 3vw;
 }
 p {
-	font-family: "Avenir";
 	font-size: 2vw;
 }
 
@@ -19,7 +20,6 @@ ul {
     overflow: hidden;
     background-color: #583285;
 
-    font-family: "Avenir";
     font-size: 2vw;
 }
 
@@ -116,18 +116,16 @@ html, body {
 }
 
 .first-home-image-text h1 {
-	font-family: "Avenir";
 	font-size: 3.2vw;
 }
 
 .first-home-image-text h2 {
-	font-family: "Avenir";
 	font-size: 1.6vw;
 }
 
 .first-home-image-text a {
-  color: #000000;
-  text-decoration: none;
+	color: #000000;
+	text-decoration: none;
 }
 
 .first-home-image-text button {
@@ -137,7 +135,6 @@ html, body {
     border: none;
     color: #000000;
     text-align: center;
-    font-family: "Avenir";
     font-size: 28px;
     padding: 20px;
     width: 200px;
@@ -215,12 +212,10 @@ html, body {
 }
 
 .second-home-image-form p {
-    font-family: "Avenir";
     font-size: 1.5vw;
 }
 
 .second-home-image-form h1 {
-    font-family: "Avenir";
     font-size: 1.5vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -228,7 +223,6 @@ html, body {
 }
 
 .second-home-image-form label {
-	font-family: "Avenir";
     font-size: 1.7vw;
 	padding: 12px 12px 12px 0;
     display: inline-block;
@@ -279,70 +273,68 @@ html, body {
 
 /*the container must be positioned relative:*/
 .custom-select {
-  position: relative;
-  font-family: "Avenir";
-  font-size: 1.5vw;
+	position: relative;
+	font-size: 1.5vw;
 }
 .custom-select select {
-  display: none; /*hide original SELECT element:*/
+	display: none; /*hide original SELECT element:*/
 }
 .select-selected {
-  background-color: #FFFFFF;
-  opacity: 0.8;
+	background-color: #FFFFFF;
+	opacity: 0.8;
 }
 /*style the arrow inside the select element:*/
 .select-selected:after {
-  position: absolute;
-  content: "";
-  top: 20px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #000000 transparent transparent transparent;
+	position: absolute;
+	content: "";
+	top: 20px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #000000 transparent transparent transparent;
 }
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #000000 transparent;
-  top: 10px;
+	border-color: transparent transparent #000000 transparent;
+	top: 10px;
 }
 /*style the items (options), including the selected item:*/
 .select-items div {
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: #333;
-  cursor: pointer;
-  user-select: none;
-  color: #FFFFFF;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: #333;
+	cursor: pointer;
+	user-select: none;
+	color: #FFFFFF;
 }
 /*style the items (options), including the selected item:*/
 .select-selected {
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: #333;
-  cursor: pointer;
-  user-select: none;
-  color: black;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: #333;
+	cursor: pointer;
+	user-select: none;
+	color: black;
 }
 /*style items (options):*/
 .select-items {
-  position: absolute;
-  background-color: #333;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
+	position: absolute;
+	background-color: #333;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
 }
 /*hide the items when the select box is closed:*/
 .select-hide {
-  display: none;
+	display: none;
 }
 .select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .second-home-image-form button {
-	font-family: "Avenir";
 	font-size: 1.5vw;
 
 	float: right;
@@ -465,12 +457,10 @@ html, body {
 }
 
 .first-login-image-form-one p {
-    font-family: "Avenir";
     font-size: 1.5vw;
 }
 
 .first-login-image-form-one h1 {
-    font-family: "Avenir";
     font-size: 3vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -478,11 +468,10 @@ html, body {
 }
 
 .first-login-image-form-one button {
-  font-family: "Avenir";
-  font-size: 1.5vw;
+	font-size: 1.5vw;
 
-  float: right;
-  background-color: #333;
+	float: right;
+	background-color: #333;
 
     border: none;
     color: white;
@@ -510,21 +499,19 @@ html, body {
 }
 
 .first-login-image-form-two p {
-    font-family: "Avenir";
     font-size: 1.5vw;
 }
 
 .first-login-image-form-two a {
-  color: black;
-  text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
 
 .first-login-image-form-two a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .first-login-image-form-two h1 {
-    font-family: "Avenir";
     font-size: 3vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -532,11 +519,10 @@ html, body {
 }
 
 .first-login-image-form-two button {
-  font-family: "Avenir";
-  font-size: 1.5vw;
+	font-size: 1.5vw;
 
-  float: right;
-  background-color: #333;
+	float: right;
+	background-color: #333;
 
     border: none;
     color: white;
@@ -592,12 +578,10 @@ html, body {
 }
 
 .first-reset-image-form p {
-    font-family: "Avenir";
     font-size: 1.5vw;
 }
 
 .first-reset-image-form h1 {
-    font-family: "Avenir";
     font-size: 3vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -605,11 +589,10 @@ html, body {
 }
 
 .first-reset-image-form button {
-  font-family: "Avenir";
-  font-size: 1.5vw;
+	font-size: 1.5vw;
 
-  float: right;
-  background-color: #333;
+	float: right;
+	background-color: #333;
 
     border: none;
     color: white;
@@ -665,12 +648,10 @@ html, body {
 }
 
 .first-request-image-form p {
-    font-family: "Avenir";
     font-size: 1.5vw;
 }
 
 .first-request-image-form h1 {
-    font-family: "Avenir";
     font-size: 3vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -678,11 +659,10 @@ html, body {
 }
 
 .first-request-image-form button {
-  font-family: "Avenir";
-  font-size: 1.5vw;
+	font-size: 1.5vw;
 
-  float: right;
-  background-color: #333;
+	float: right;
+	background-color: #333;
 
     border: none;
     color: white;
@@ -831,13 +811,11 @@ input[type=text]:focus {
 }
 
 .first-logout-image-text h1 {
-  font-family: "Avenir";
-  font-size: 3.2vw;
+	font-size: 3.2vw;
 }
 
 .first-logout-image-text h2 {
-  font-family: "Avenir";
-  font-size: 2.2vw;
+	font-size: 2.2vw;
 }
 
 .first-error-404-image {
@@ -880,65 +858,61 @@ input[type=text]:focus {
 }
 
 .first-error-404-image-text h1 {
-  font-family: "Avenir";
-  font-size: 3.2vw;
+	font-size: 3.2vw;
 }
 
 .first-error-404-image-text h2 {
-  font-family: "Avenir";
-  font-size: 2.2vw;
+	font-size: 2.2vw;
 }
 
 .footer-one {
-  left: 0;
-   bottom: 0;
-   width: 100%;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 
-   margin: 0;
-   padding: 0;
+	margin: 0;
+	padding: 0;
 
-   overflow: hidden;
-   background-color: #583285;
+	overflow: hidden;
+	background-color: #583285;
 
-   font-family: "Avenir";
-   font-size: 2vw;
+	font-size: 2vw;
 
-   float: left;
-   display: block;
-   color: white;
-   text-align: center;
-   text-decoration: none;
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
 }
 
 .main-container {
-  float: left;
-  position: relative;
-  left: 50%;
+	float: left;
+	position: relative;
+	left: 50%;
 }
 
 .fixer-container {
-  float: left;
-  position: relative;
-  left: -50%;
+	float: left;
+	position: relative;
+	left: -50%;
 }
 
 .footer-two {
-   left: 0;
-   bottom: 0;
-   width: 100%;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 
-   margin: 0;
-   padding: 0;
+	margin: 0;
+	padding: 0;
 
-   overflow: hidden;
-   background-color: #583285;
+	overflow: hidden;
+	background-color: #583285;
 
-   font-family: "Avenir";
-   font-size: 2vw;
+	font-size: 2vw;
 
-   float: left;
-   display: block;
-   color: white;
-   text-align: center;
-   text-decoration: none;
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
 }
