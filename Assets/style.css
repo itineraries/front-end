@@ -414,7 +414,7 @@ html, body {
 }
 
 .first-login-image {
-    background-image: url("NYU_White_Bus-Passenger.png");
+    background-image: url("NYU_White_Bus-Passenger.jpg");
     background-repeat: no-repeat;
     
     display: block;
@@ -535,7 +535,7 @@ html, body {
 }
 
 .first-reset-image {
-    background-image: url("NYU_White_Bus-Passenger.png");
+    background-image: url("NYU_White_Bus-Passenger.jpg");
     background-repeat: no-repeat;
     
     display: block;
@@ -604,8 +604,8 @@ html, body {
     cursor: pointer;
 }
 
-.first-request-image {
-    background-image: url("NYU_White_Bus-Passenger.png");
+.first-reset-image {
+    background-image: url("NYU_White_Bus-Passenger.jpg");
     background-repeat: no-repeat;
     
     display: block;
@@ -691,7 +691,7 @@ input[type=text]:focus {
 }
 
 .first-account-image {
-    background-image: url("NYU_White_Bus-Passenger.png");
+    background-image: url("NYU_White_Bus-Passenger.jpg");
     background-repeat: no-repeat;
     
     display: block;
@@ -734,12 +734,10 @@ input[type=text]:focus {
 }
 
 .first-account-image-form p {
-    font-family: "Avenir";
     font-size: 1.5vw;
 }
 
 .first-account-image-form h1 {
-    font-family: "Avenir";
     font-size: 3vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -747,7 +745,6 @@ input[type=text]:focus {
 }
 
 .first-account-image-form h2 {
-    font-family: "Avenir";
     font-size: 2vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -755,7 +752,6 @@ input[type=text]:focus {
 }
 
 .first-account-image-form button {
-  font-family: "Avenir";
   font-size: 1.5vw;
 
   float: right;
@@ -772,7 +768,7 @@ input[type=text]:focus {
 }
 
 .first-logout-image {
-    background-image: url("NYU_White_Bus-Driver.png");
+    background-image: url("NYU_White_Bus-Driver.jpg");
     background-repeat: no-repeat;
     
     display: block;
@@ -819,7 +815,7 @@ input[type=text]:focus {
 }
 
 .first-error-404-image {
-    background-image: url("NYU_White_Bus-Not_in_Service.png");
+    background-image: url("NYU_White_Bus-Not_in_Service.jpg");
     background-repeat: no-repeat;
     
     display: block;
