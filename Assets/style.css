@@ -414,7 +414,7 @@ html, body {
 }
 
 .first-login-image {
-    background-image: url("NYU_White_Bus-Passenger.png");
+    background-image: url("NYU_White_Bus-Passenger.jpg");
     background-repeat: no-repeat;
     
     display: block;
@@ -535,7 +535,7 @@ html, body {
 }
 
 .first-reset-image {
-    background-image: url("NYU_White_Bus-Passenger.png");
+    background-image: url("NYU_White_Bus-Passenger.jpg");
     background-repeat: no-repeat;
     
     display: block;
@@ -605,7 +605,7 @@ html, body {
 }
 
 .first-reset-image {
-    background-image: url("NYU_White_Bus-Passenger.png");
+    background-image: url("NYU_White_Bus-Passenger.jpg");
     background-repeat: no-repeat;
     
     display: block;
@@ -692,7 +692,7 @@ input[type=text]:focus {
 
 
 .first-logout-image {
-    background-image: url("NYU_White_Bus-Driver.png");
+    background-image: url("NYU_White_Bus-Driver.jpg");
     background-repeat: no-repeat;
     
     display: block;
