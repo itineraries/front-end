@@ -1,4 +1,4 @@
-h1, h2, p, ul, button, label, .custom-select, .footer-one, .footer-two {
+h1, h2, p, ul, button, input, label, .custom-select, .footer-one, .footer-two {
 	font-family: "Avenir", "Segoe UI", Arial, sans-serif;
 }
 
@@ -334,7 +334,7 @@ html, body {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
-.second-home-image-form button {
+.second-home-image-form button, .second-home-image-form input[type=submit] {
 	font-size: 1.5vw;
 
 	float: right;
@@ -467,7 +467,7 @@ html, body {
     float: middle;
 }
 
-.first-login-image-form-one button {
+.first-login-image-form-one button , .first-login-image-form-one input[type=submit] {
 	font-size: 1.5vw;
 
 	float: right;
@@ -518,7 +518,7 @@ html, body {
     float: middle;
 }
 
-.first-login-image-form-two button {
+.first-login-image-form-two button, .first-login-image-form-two input[type=submit] {
 	font-size: 1.5vw;
 
 	float: right;
@@ -588,7 +588,7 @@ html, body {
     float: middle;
 }
 
-.first-reset-image-form button {
+.first-reset-image-form button , .first-reset-image-form input[type=submit]{
 	font-size: 1.5vw;
 
 	float: right;
@@ -674,7 +674,7 @@ html, body {
     cursor: pointer;
 }
 
-input[type=text] {
+input[type=text], input[type=time], input[type=number], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -690,6 +690,7 @@ input[type=text]:focus {
     border: 3px solid #555;
 }
 
+<<<<<<< HEAD
 .first-account-image {
     background-image: url("NYU_White_Bus-Passenger.png");
     background-repeat: no-repeat;
@@ -770,6 +771,8 @@ input[type=text]:focus {
     margin: 6px 4px;
     cursor: pointer;
 }
+=======
+>>>>>>> c6a94b9f6935c54838267a4f059a28f5f94468ac
 
 .first-logout-image {
     background-image: url("NYU_White_Bus-Driver.png");
