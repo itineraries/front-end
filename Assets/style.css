@@ -467,7 +467,7 @@ html, body {
     float: middle;
 }
 
-.first-login-image-form-one button {
+.first-login-image-form-one button , .first-login-image-form-one input[type=submit] {
 	font-size: 1.5vw;
 
 	float: right;
@@ -518,7 +518,7 @@ html, body {
     float: middle;
 }
 
-.first-login-image-form-two button {
+.first-login-image-form-two button, .first-login-image-form-two input[type=submit] {
 	font-size: 1.5vw;
 
 	float: right;
@@ -588,7 +588,7 @@ html, body {
     float: middle;
 }
 
-.first-reset-image-form button {
+.first-reset-image-form button , .first-reset-image-form input[type=submit]{
 	font-size: 1.5vw;
 
 	float: right;
@@ -674,7 +674,7 @@ html, body {
     cursor: pointer;
 }
 
-input[type=text], input[type=time], input[type=number] {
+input[type=text], input[type=time], input[type=number], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -689,6 +689,7 @@ input[type=text], input[type=time], input[type=number] {
 input[type=text]:focus {
     border: 3px solid #555;
 }
+
 
 .first-logout-image {
     background-image: url("NYU_White_Bus-Driver.png");
