@@ -429,7 +429,7 @@ html, body {
     height: 91vh;
 
     background: #FFFFFF;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .first-login-image-form-one p {
@@ -443,13 +443,6 @@ html, body {
     margin-top: 6px;
     margin-bottom: 6px;
     float: middle;
-}
-
-.first-login-image-form-one label {
-  font-family: "Avenir";
-  font-size: 1.5vw;
-  padding: 12px 12px 12px 0;
-  display: inline-block;
 }
 
 .first-login-image-form-one button {
@@ -481,7 +474,7 @@ html, body {
     height: 91vh;
 
     background: #FFFFFF;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .first-login-image-form-two p {
@@ -495,13 +488,6 @@ html, body {
     margin-top: 6px;
     margin-bottom: 6px;
     float: middle;
-}
-
-.first-login-image-form-two label {
-  font-family: "Avenir";
-  font-size: 1.5vw;
-  padding: 12px 12px 12px 0;
-  display: inline-block;
 }
 
 .first-login-image-form-two button {
@@ -530,6 +516,7 @@ input[type=text] {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
+    font-size: 1.5vw;
 }
 
 input[type=text]:focus {
