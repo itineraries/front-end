@@ -1,4 +1,4 @@
-h1, h2, p, ul, button, label, .custom-select, .footer-one, .footer-two {
+h1, h2, p, ul, button, input, label, .custom-select, .footer-one, .footer-two {
 	font-family: "Avenir", "Segoe UI", Arial, sans-serif;
 }
 
@@ -334,7 +334,7 @@ html, body {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
-.second-home-image-form button {
+.second-home-image-form button, .second-home-image-form input[type=submit] {
 	font-size: 1.5vw;
 
 	float: right;
@@ -674,7 +674,7 @@ html, body {
     cursor: pointer;
 }
 
-input[type=text] {
+input[type=text], input[type=time], input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
