@@ -57,10 +57,8 @@
 					</div>
 				</div>
 			</div>
-			<div>
-				<button class="button">Favorite</button>
-				<button class="button">Reverse</button>
-				<button class="button">Use Current Location as Origin</button>
+			<div id="place-footer">
+				<button>Favorite</button>
 			</div>
 			<br><br><br>
 			<hr>
@@ -102,9 +100,7 @@
 					<input type="time" name="when" id="time_when" value="08:52">
 				</div>
 			</div>
-			<div>
-				<button class="button">Now</button>
-			</div>
+			<div id="use-now"></div>
 			<br><br><br>
 			<hr>
 			<center><h1><i>Walking</i></h1></center>
@@ -170,7 +166,7 @@
     <p>All Rights Reserved</p>
     <img src="miny_wht_on_trans.gif" alt="Made in NY Logo" width="50" height="50">
 </div>
-<script>
+<script type="text/javascript">
 var x, i, j, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
@@ -244,5 +240,6 @@ function closeAllSelect(elmnt) {
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 </script>
+<script type="text/javascript" src="app.min.js"></script>
 </body>
 </html>
