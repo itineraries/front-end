@@ -1,14 +1,14 @@
 h1 {
-	font-family: "Avenir";
+	font-family: "Avenir", "Segoe UI", Arial, sans-serif;
 	font-size: 10vw;
 }
 
 h2 {
-	font-family: "Avenir";
+	font-family: "Avenir", "Segoe UI", Arial, sans-serif;
 	font-size: 3vw;
 }
 p {
-	font-family: "Avenir";
+	font-family: "Avenir", "Segoe UI", Arial, sans-serif;
 	font-size: 2vw;
 }
 
@@ -19,7 +19,7 @@ ul {
     overflow: hidden;
     background-color: #583285;
 
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 2vw;
 }
 
@@ -116,12 +116,12 @@ html, body {
 }
 
 .first-home-image-text h1 {
-	font-family: "Avenir";
+	font-family: "Avenir", "Segoe UI", Arial, sans-serif;
 	font-size: 3.2vw;
 }
 
 .first-home-image-text h2 {
-	font-family: "Avenir";
+	font-family: "Avenir", "Segoe UI", Arial, sans-serif;
 	font-size: 1.6vw;
 }
 
@@ -137,7 +137,7 @@ html, body {
     border: none;
     color: #000000;
     text-align: center;
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 28px;
     padding: 20px;
     width: 200px;
@@ -215,12 +215,12 @@ html, body {
 }
 
 .second-home-image-form p {
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 1.5vw;
 }
 
 .second-home-image-form h1 {
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 1.5vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -228,7 +228,7 @@ html, body {
 }
 
 .second-home-image-form label {
-	font-family: "Avenir";
+	font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 1.7vw;
 	padding: 12px 12px 12px 0;
     display: inline-block;
@@ -280,7 +280,7 @@ html, body {
 /*the container must be positioned relative:*/
 .custom-select {
   position: relative;
-  font-family: "Avenir";
+  font-family: "Avenir", "Segoe UI", Arial, sans-serif;
   font-size: 1.5vw;
 }
 .custom-select select {
@@ -342,7 +342,7 @@ html, body {
 }
 
 .second-home-image-form button {
-	font-family: "Avenir";
+	font-family: "Avenir", "Segoe UI", Arial, sans-serif;
 	font-size: 1.5vw;
 
 	float: right;
@@ -465,12 +465,12 @@ html, body {
 }
 
 .first-login-image-form-one p {
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 1.5vw;
 }
 
 .first-login-image-form-one h1 {
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 3vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -478,7 +478,7 @@ html, body {
 }
 
 .first-login-image-form-one button {
-  font-family: "Avenir";
+  font-family: "Avenir", "Segoe UI", Arial, sans-serif;
   font-size: 1.5vw;
 
   float: right;
@@ -510,7 +510,7 @@ html, body {
 }
 
 .first-login-image-form-two p {
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 1.5vw;
 }
 
@@ -524,7 +524,7 @@ html, body {
 }
 
 .first-login-image-form-two h1 {
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 3vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -532,7 +532,7 @@ html, body {
 }
 
 .first-login-image-form-two button {
-  font-family: "Avenir";
+  font-family: "Avenir", "Segoe UI", Arial, sans-serif;
   font-size: 1.5vw;
 
   float: right;
@@ -592,12 +592,12 @@ html, body {
 }
 
 .first-reset-image-form p {
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 1.5vw;
 }
 
 .first-reset-image-form h1 {
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 3vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -605,7 +605,7 @@ html, body {
 }
 
 .first-reset-image-form button {
-  font-family: "Avenir";
+  font-family: "Avenir", "Segoe UI", Arial, sans-serif;
   font-size: 1.5vw;
 
   float: right;
@@ -665,12 +665,12 @@ html, body {
 }
 
 .first-request-image-form p {
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 1.5vw;
 }
 
 .first-request-image-form h1 {
-    font-family: "Avenir";
+    font-family: "Avenir", "Segoe UI", Arial, sans-serif;
     font-size: 3vw;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -678,7 +678,7 @@ html, body {
 }
 
 .first-request-image-form button {
-  font-family: "Avenir";
+  font-family: "Avenir", "Segoe UI", Arial, sans-serif;
   font-size: 1.5vw;
 
   float: right;
@@ -750,12 +750,12 @@ input[type=text]:focus {
 }
 
 .first-logout-image-text h1 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Segoe UI", Arial, sans-serif;
   font-size: 3.2vw;
 }
 
 .first-logout-image-text h2 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Segoe UI", Arial, sans-serif;
   font-size: 2.2vw;
 }
 
@@ -799,12 +799,12 @@ input[type=text]:focus {
 }
 
 .first-error-404-image-text h1 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Segoe UI", Arial, sans-serif;
   font-size: 3.2vw;
 }
 
 .first-error-404-image-text h2 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Segoe UI", Arial, sans-serif;
   font-size: 2.2vw;
 }
 
@@ -819,7 +819,7 @@ input[type=text]:focus {
    overflow: hidden;
    background-color: #583285;
 
-   font-family: "Avenir";
+   font-family: "Avenir", "Segoe UI", Arial, sans-serif;
    font-size: 2vw;
 
    float: left;
@@ -852,7 +852,7 @@ input[type=text]:focus {
    overflow: hidden;
    background-color: #583285;
 
-   font-family: "Avenir";
+   font-family: "Avenir", "Segoe UI", Arial, sans-serif;
    font-size: 2vw;
 
    float: left;
