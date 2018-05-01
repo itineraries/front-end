@@ -205,14 +205,14 @@ html, body {
     transition: 0.5s;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 780px) {
     .second-home-image {
         padding: 10px;
     }
     .second-home-image-form {
         padding: 25px;
         border-radius: 25px;
-        width: 600px;
+        width: 700px;
     }
 }
 
