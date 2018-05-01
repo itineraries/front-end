@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Contact | NYU CTIP</title>
+    <link rel="icon" href="NYU_CTIP_Logo-Purple.png" type="image/gif" sizes="16x16">
+    <title>Contact | NYU CTIP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-	<h1><center>Contact</center></h1>
-	<hr>
-	<h2>Got a question?</h2>
-	<contact>
-		<p>Please enter the following information indicated below so that we can better assess your feedback:</p>
-		<form action="mailto:@.com" method="post" enctype="text/plain">
-			Name:<br>
-			<input type="text" name="name"><br><br>
-			E-mail:<br>
-			<input type="text" name="mail"><br><br>
-			Comment:<br>
-			<input type="text" name="comment" size="50"><br><br>
-			<input type="submit" value="Send">
-			<input type="reset" value="Reset">
-		</form>
-	</contact>
+	<ul class="navbar">
+		<li><a href="/">Home</a></li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">About</a>
+			<div class="dropdown-content">
+				<a href="#">Introduction</a>
+				<a href="#">Team</a>
+			</div>
+		</li>
+		<li><a href="/contact">Contact</a></li>
+		<li style="float:right"><a class="active" href="">Register / Login</a></li>
+	</ul>
+	<div class="embed embed--16by9">
+		<video class="embed__item" src="Contact.mp4" preload="auto" controls autoplay loop muted>
+			Your browser does not support the video tag.
+		</video>
+	</div>
+	<div class="text">
+		<h1 align="center"><i>Contact</i></h1>
+		<hr>
+		<h2>Got a question?</h2>
+		<p>Please email <b><a href="mailto:info@nyuctip.com?Subject=Customer%20Support" target="_top">info@nyuctip.com</a></b> with a detailed description of any issues may be experiencing when using our site so that we can better assess them.</p>
+	</div>
+	<div class="footer-one">
+		<div class="main-container">
+			<div class="fixer-container">
+				<ul>
+					<li><a href="/terms-of-use">Terms of Use</a></li>
+					<li><a href="/privacy-policy">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer-two">
+		<p>&copy; 2017 New York University Campus Transportation Itinerary Planner</p>
+		<p>All Rights Reserved</p>
+		<img src="miny_wht_on_trans.gif" alt="Made in NY Logo" width="50" height="50">
+	</div>
 </body>
 </html>
