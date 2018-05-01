@@ -197,29 +197,37 @@ html, body {
     transition: 0.5s;
 }
 
-.itinerary-options {
+.form-container {
     background: rgba(255, 255, 255, 0.8);
     padding: 35px;
+	margin: 0 0 10px;
     width: auto;
     transition: 0.5s;
+	display: inline-block;
 }
 
 @media screen and (min-width: 780px) {
     .second-home-image, .first-departures-image {
         padding: 10px;
     }
-    .itinerary-options {
+    .form-container {
         padding: 25px;
         border-radius: 25px;
         width: 700px;
     }
 }
 
-.itinerary-options * {
+@media screen and (min-width: 790px) {
+    .form-container {
+		margin-right: 10px;
+	}
+}
+
+.form-container * {
     font-size: 14pt;
 }
 
-.itinerary-options h1 {
+.form-container h1 {
     border-top: 1px inset;
     padding-top: 12px;
     font-size: 16pt;
@@ -328,7 +336,7 @@ html, body {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.itinerary-options button, .itinerary-options input[type=submit], .itinerary-options .link-button {
+.form-container button, .form-container input[type=submit], .form-container .link-button {
     background-color: #333;
     
     border: none;
@@ -405,51 +413,14 @@ html, body {
 }
 
 .first-departures-image-form-two {
-    position: absolute;
-    top: 52.3%;
-    left: 106%;
-    
-    border-radius: 25px;
-    padding: 25px;
-    
-    width: 30vw;
-    height: 40vh;
-    
-    background: #FFFFFF;
-    opacity: 0.8;
-}
-
-.first-departures-image-form-two p {
-    font-size: 1.5vw;
-}
-
-.first-departures-image-form-two h1 {
-    font-size: 1.5vw;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    float: middle;
+	width: auto;
+	max-width: 300px;
 }
 
 .first-departures-image-form-two label {
     font-size: 1.7vw;
     padding: 12px 12px 12px 0;
     display: inline-block;
-}
-
-.first-departures-image-form-two button, .first-departures-image-form-two input[type=submit] {
-    font-size: 1.5vw;
-    
-    float: right;
-    background-color: #333;
-    
-    border: none;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 6px 4px;
-    cursor: pointer;
 }
 
 .first-login-image {
