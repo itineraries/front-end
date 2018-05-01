@@ -200,7 +200,7 @@ html, body {
 }
 
 .form-container {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     padding: 35px;
 	margin: 0 0 10px;
     width: auto;
@@ -469,70 +469,12 @@ html, body {
 .first-reset-image {
     background-image: url("NYU_White_Bus-Passenger.jpg");
     background-repeat: no-repeat;
-    
-    display: block;
-    
-    border: 0;
-    
-    margin: 0;
-    padding: 0;
-    
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    max-width: 100%;
-    height: 100%;
-    
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: cover;
-    
-    background-position: contain;
-    position: relative;
+	text-align: center;
 }
 
 .first-reset-image-form {
-    position: absolute;
-    top: 1%;
-    left: 27%;
-    
-    border-radius: 25px;
-    padding: 25px;
-    
-    width: 40vw;
-    height: 91vh;
-    
-    background: #FFFFFF;
-    opacity: 0.9;
-}
-
-.first-reset-image-form p {
-    font-size: 1.5vw;
-}
-
-.first-reset-image-form h1 {
-    font-size: 3vw;
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-
-.first-reset-image-form button , .first-reset-image-form input[type=submit]{
-    font-size: 1.5vw;
-    
-    float: right;
-    background-color: #333;
-    
-    border: none;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 6px 4px;
-    cursor: pointer;
+    text-align: left;
+	max-width: 600px;
 }
 
 .first-request-image {
@@ -544,7 +486,6 @@ html, body {
 .first-request-image-form {
 	text-align: left;
 	max-width: 600px;
-	width: 100%;
 }
 
 input[type=text], input[type=time], input[type=number], input[type=password], select, .custom-select > .select-selected {
