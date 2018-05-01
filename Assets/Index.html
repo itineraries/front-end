@@ -30,61 +30,39 @@
 <div id="second-home-image" class="second-home-image">
 	<div class="second-home-image-form">
         <p>Enter your trip information below and then click or press <i>Find Itinerary</i>.</p>
-        <hr>
 		<form method="get">
-			<center><h1><i>Where</i></h1></center>
-			<div class="row">
-				<div class="col-25">
-					<label for="text-orig">Origin</label>
-				</div>
-				<div class="col-75">
-					<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
-					<!--DT: removed class="custom-select" because this is no longer a select element-->
-					<div style="width:98.6%;">
+			<h1>Where</h1>
+			<div class="form-table">
+				<label>
+					<span>Origin</span>
+					<div>
 						<input name="orig" id="text-orig" type="text" value="" list="stops">
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-25">
-					<label for="text-dest">Destination</label>
-				</div>
-				<div class="col-75">
-					<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
-					<!--DT: removed class="custom-select" because this is no longer a select element-->
-					<div style="width:98.6%;">
+				</label>
+				<label>
+					<span>Destination</span>
+					<div>
 						<input name="dest" id="text-dest" type="text" value="" list="stops">
 					</div>
-				</div>
+				</label>
 			</div>
-			<div id="place-footer">
-				<button>Favorite</button>
-			</div>
-			<br><br><br>
-			<hr>
-			<center><h1><i>When</i></h1></center>
-			<div class="row">
-				<div class="col-7">
-					<label class="container">
-						<input type="radio" name="depart" value="1" id="radio_depart_depart" checked>
-						<span class="checkmark"></span>
-					</label>
-				</div>
-				<div class="col-18">
-					<label for="depart-at">Depart at</label>
-				</div>
-				<div class="col-7">
-					<label class="container">
-						<input type="radio" name="depart" value="0" id="radio_depart_arrive">
-						<span class="checkmark"></span>
-					</label>
-				</div>
-				<div class="col-18">
-					<label for="arrive-by">Arrive by</label>
-				</div>
-				<div class="col-25">
-					<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
-					<div class="custom-select" style="width:98.6%;">
+			<div id="place-footer" class="form-actions"><!--
+				The buttons are added by JavaScript.
+			--></div>
+			<h1>When</h1>
+			<div class="form-sentence">
+				<label class="container">
+					<input type="radio" name="depart" value="1" id="radio_depart_depart" checked>
+					<span class="checkmark"></span>
+					<span>Depart at</span>
+				</label>
+				<label class="container">
+					<input type="radio" name="depart" value="0" id="radio_depart_arrive">
+					<span class="checkmark"></span>
+					<span>Arrive by</span>
+				</label>
+				<div class="form-sentence-word">
+					<div class="custom-select">
 						<select id="select_day" name="day">
 							<option>Sunday</option>
 							<option selected>Monday</option>
@@ -95,52 +73,43 @@
 							<option>Saturday</option>
 						</select>
 					</div>
-				</div>
-				<div class="col-25">
 					<input type="time" name="when" id="time_when" value="08:52">
+					<div id="use-now"><!--
+						The button is added by JavaScript.
+					--></div>
 				</div>
 			</div>
-			<div id="use-now"></div>
-			<br><br><br>
-			<hr>
-			<center><h1><i>Walking</i></h1></center>
-			<div class="row">
-				<div class="col-7">
+			<h1>Walking</h1>
+			<div class="form-table">
+				<div>
 					<label class="container">
 						<input type="radio" name="walking-max" id="radio_walking-max_unlimited" value="unlimited" checked>
 						<span class="checkmark"></span>
 					</label>
-				</div>
-				<div class="col-87">
 					<label for="radio_walking-max_unlimited">Unlimited walking</label>
 				</div>
-				<div class="col-7">
+				<div>
 					<label class="container">
 						<input type="radio" name="walking-max" id="radio_walking-max_custom" value="custom">
 						<span class="checkmark"></span>
 					</label>
-				</div>
-				<div class="col-87">
-					<label for="radio_walking-max_custom">Limit to</label>
-					<label>
-						<span style="display: inline-block; width: 4em;">
+					<span>
+						<label for="radio_walking-max_custom">Limit to</label>
+						<label>
 							<input name="walking-max-custom" type="number" min="1" max="5258964960" step="1" value="5.0">
-						</span>
-						minutes at a time
-					</label>
+							minutes at a time
+						</label>
+					</span>
 				</div>
-				<div class="col-7">
+				<div>
 					<label class="container">
 						<input type="radio" name="walking-max" id="radio_walking-max_zero" value="zero">
 						<span class="checkmark"></span>
 					</label>
-				</div>
-				<div class="col-87">
 					<label for="radio_walking-max_zero">No walking</label>
 				</div>
 			</div>
-			<div>
-				<button class="button">Reset</button>
+			<div class="form-actions">
 				<input type="submit" value="Find Itinerary">
 			</div>
 			<datalist id="stops">

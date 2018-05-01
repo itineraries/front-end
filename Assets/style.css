@@ -185,7 +185,7 @@ html, body {
     right: 0;
 
     max-width: 100%;
-    height: 100%;
+    min-height: 100%;
 
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -194,87 +194,85 @@ html, body {
 
     background-position: contain;
     position: relative;
+	transition: 0.5s;
 }
 
 .second-home-image-form {
-    position: absolute;
-    top: 1%;
-    left: 3%;
-
-    border-radius: 25px;
-    padding: 25px;
-
-    width: 48vw;
-    height: 91vh;
-
     background: #FFFFFF;
     opacity: 0.8;
+    padding: 35px;
+    width: auto;
+	transition: 0.5s;
 }
 
-.second-home-image-form p {
-    font-size: 1.5vw;
+@media screen and (min-width: 680px) {
+    .second-home-image {
+        padding: 10px;
+    }
+    .second-home-image-form {
+        padding: 25px;
+        border-radius: 25px;
+        width: 600px;
+    }
+}
+
+.second-home-image-form * {
+    font-size: 14pt;
 }
 
 .second-home-image-form h1 {
-    font-size: 1.5vw;
+    border-top: 1px inset;
+    padding-top: 12px;
+    font-size: 16pt;
     margin-top: 6px;
     margin-bottom: 6px;
-    float: middle;
+    text-align: center;
+    font-style: italic;
 }
 
-.second-home-image-form label {
-    font-size: 1.7vw;
-	padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-
-.col-7 {
-    float: left;
-    width: 7%;
-    margin-top: 6px;
-}
-
-.col-18 {
-    float: left;
-    width: 18%;
-    margin-top: 6px;
-}
-
-.col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-
-.col-50 {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-}
-
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-}
-
-.col-87 {
-    float: left;
-    width: 87%;
-    margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
+.form-table {
     display: table;
-    clear: both;
+}
+
+.form-table > * {
+    display: table-row;
+}
+
+.form-table > * > * {
+    display: table-cell;
+    padding: 0 4px;
+}
+
+.form-table > * > :first-child {
+    padding-left: 0;
+}
+
+.form-table > * > :last-child, .form-table > * > :last-child > * {
+    width: 100%;
+    padding-right: 0;
+}
+
+.form-actions {
+    text-align: right;
+    margin-right: -4px;
+}
+
+.form-sentence {
+    display: block;
+}
+
+.form-sentence > *, .form-sentence-word {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.form-sentence-word > * {
+    display: inline-block;
 }
 
 /*the container must be positioned relative:*/
 .custom-select {
 	position: relative;
-	font-size: 1.5vw;
 }
 .custom-select select {
 	display: none; /*hide original SELECT element:*/
@@ -287,7 +285,7 @@ html, body {
 .select-selected:after {
 	position: absolute;
 	content: "";
-	top: 20px;
+	top: 50%;
 	right: 10px;
 	width: 0;
 	height: 0;
@@ -297,7 +295,7 @@ html, body {
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
 	border-color: transparent transparent #000000 transparent;
-	top: 10px;
+	margin-top: -8px;
 }
 /*style the items (options), including the selected item:*/
 .select-items div {
@@ -310,9 +308,6 @@ html, body {
 }
 /*style the items (options), including the selected item:*/
 .select-selected {
-	padding: 8px 16px;
-	border: 1px solid transparent;
-	border-color: #333;
 	cursor: pointer;
 	user-select: none;
 	color: black;
@@ -335,9 +330,8 @@ html, body {
 }
 
 .second-home-image-form button, .second-home-image-form input[type=submit] {
-	font-size: 1.5vw;
+	font-size: 11pt;
 
-	float: right;
 	background-color: #333;
 
     border: none;
@@ -352,11 +346,9 @@ html, body {
 
 /* The container */
 .container {
-    display: block;
     position: relative;
     margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
+    min-width: 25px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -364,19 +356,26 @@ html, body {
 }
 
 /* Hide the browser's default radio button */
-.container input {
-    position: absolute;
-    opacity: 0;
+.container > input {
+    display: none;
+}
+
+.container, .container + label, .container > .checkmark + * {
     cursor: pointer;
+}
+
+.container > .checkmark + * {
+    margin-left: 32px;
 }
 
 /* Create a custom radio button */
 .checkmark {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
     height: 25px;
     width: 25px;
+    margin-top: -13px;
     background-color: #333;
     border-radius: 50%;
 }
@@ -384,11 +383,6 @@ html, body {
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
     background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
-    background-color: #333;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -674,16 +668,21 @@ html, body {
     cursor: pointer;
 }
 
-input[type=text], input[type=time], input[type=number], input[type=password] {
-    width: 100%;
+input[type=text], input[type=time], input[type=number], input[type=password], .custom-select > .select-selected {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
+}
+
+input {
     font-size: 1.5vw;
+}
+
+.custom-select > .select-selected {
+    padding-right: 30px;
 }
 
 input[type=text]:focus {
