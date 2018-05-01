@@ -1,4 +1,4 @@
-h1, h2, p, ul, ol, button, input, label, .custom-select, .footer-one, .footer-two {
+h1, h2, p, ul, ol, button, input, label, .custom-select, .footer-one, .footer-two, .link-button {
     font-family: "Avenir", "Segoe UI", Arial, sans-serif;
 }
 
@@ -328,7 +328,7 @@ html, body {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.itinerary-options button, .itinerary-options input[type=submit] {
+.itinerary-options button, .itinerary-options input[type=submit], .itinerary-options .link-button {
     background-color: #333;
     
     border: none;
