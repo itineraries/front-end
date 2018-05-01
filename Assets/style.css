@@ -1035,3 +1035,7 @@ color: white;
 text-align: center;
 text-decoration: none;
 }
+
+#select_day + .select-selected {
+	width: 8em;
+}
