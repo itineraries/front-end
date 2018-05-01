@@ -13,7 +13,7 @@ p {
     font-size: 2vw;
 }
 
-.navbar {
+.navbar, .footer-one ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -23,11 +23,11 @@ p {
     font-size: 2vw;
 }
 
-.navbar li {
+.navbar li, .footer-one li {
     float: left;
 }
 
-.navbar li a, .dropbtn {
+.navbar li a, .footer-one li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -35,7 +35,7 @@ p {
     text-decoration: none;
 }
 
-.navbar li a:hover:not(.active), .dropdown:hover .dropbtn {
+.navbar li a:hover:not(.active), .footer-one li a:hover:not(.active), .dropdown:hover .dropbtn {
     background-color: #280038;
 }
 
