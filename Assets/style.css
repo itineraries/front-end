@@ -13,7 +13,7 @@ p {
     font-size: 2vw;
 }
 
-ul {
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -23,11 +23,11 @@ ul {
     font-size: 2vw;
 }
 
-li {
+.navbar li {
     float: left;
 }
 
-li a, .dropbtn {
+.navbar li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -35,11 +35,11 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover:not(.active), .dropdown:hover .dropbtn {
+.navbar li a:hover:not(.active), .dropdown:hover .dropbtn {
     background-color: #280038;
 }
 
-li.dropdown {
+.navbar li.dropdown {
     display: inline-block;
 }
 
