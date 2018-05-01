@@ -1,106 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" href="NYU_CTIP_Logo-Purple.png" type="image/gif" sizes="16x16">
-    <title>Departures | NYU CTIP</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-  <ul class="navbar">
-	<li><a href="/">Home</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">About</a>
-    <div class="dropdown-content">
-      <a href="#">Introduction</a>
-      <a href="#">Team</a>
-    </div>
-  </li>
-  <li><a href="/contact">Contact</a></li>
-  <li style="float:right"><a class="active" href="">Register / Login</a></li>
-</ul>
-<div id="first-departures-image" class="first-departures-image">
-	<div class="first-departures-image-form-one">
-        <p>Select a bus stop and a time to view departure times from that stop after that time and then click or press <i>List Departures</i>.</p>
-        <hr>
-		<form method="get">
-			<center><h1><i>Where</i></h1></center>
-			<div class="row">
-				<div class="col-25">
-					<label for="text-orig">Origin</label>
+	<head>
+		<link rel="icon" href="NYU_CTIP_Logo-Purple.png" type="image/gif" sizes="16x16">
+		<title>Departures | NYU CTIP</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<ul class="navbar">
+			<li><a href="/">Home</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">About</a>
+				<div class="dropdown-content">
+					<a href="#">Introduction</a>
+					<a href="#">Team</a>
 				</div>
-				<div class="col-75">
-					<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
-					<!--DT: removed class="custom-select" because this is no longer a select element-->
-					<div style="width:98.6%;">
-						<input name="orig" id="text-orig" type="text" value="" list="stops">
+			</li>
+			<li><a href="/contact">Contact</a></li>
+			<li style="float:right"><a class="active" href="">Register / Login</a></li>
+		</ul>
+		<div id="first-departures-image" class="first-departures-image">
+			<div class="first-departures-image-form-one">
+				<p>Select a bus stop and a time to view departure times from that stop after that time and then click or press <i>List Departures</i>.</p>
+				<hr>
+				<form method="get">
+					<center><h1><i>Where</i></h1></center>
+					<div class="row">
+						<div class="col-25">
+							<label for="text-orig">Origin</label>
+						</div>
+						<div class="col-75">
+							<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+							<!--DT: removed class="custom-select" because this is no longer a select element-->
+							<div style="width:98.6%;">
+								<input name="orig" id="text-orig" type="text" value="" list="stops">
+							</div>
+						</div>
+					</div>
+					<div id="place-footer">
+						<button>Favorite</button>
+					</div>
+					<br><br><br>
+					<hr>
+					<center><h1><i>When</i></h1></center>
+					<div class="row">
+						<div class="col-25">
+							<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+							<div class="custom-select" style="width:98.6%;">
+								<select id="select_day" name="day">
+									<option>Sunday</option>
+									<option selected>Monday</option>
+									<option>Tuesday</option>
+									<option>Wednesday</option>
+									<option>Thursday</option>
+									<option>Friday</option>
+									<option>Saturday</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-25">
+							<input type="time" name="when" id="time_when" value="08:52">
+						</div>
+					</div>
+					<div>
+						<button class="button">Reset</button>
+						<input type="submit" value="List Departures">
+					</div>
+					<datalist id="stops">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</datalist>
+				</form>
+				<div class="first-departures-image-form-two">
+					<h1 align="center"><i>Note</i></h1>
+					<hr>
+					<p>Please note that the image is static and does not display your route.</p>
+					<hr>
+					<p>Not what you were looking for? Click the button below to go back to the <i>Itinerary Finder</i>.</p>
+					<div>
+						<input type="submit" value="Itinerary Finder">
 					</div>
 				</div>
 			</div>
-			<div id="place-footer">
-				<button>Favorite</button>
-			</div>
-			<br><br><br>
-			<hr>
-			<center><h1><i>When</i></h1></center>
-			<div class="row">
-				<div class="col-25">
-					<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
-					<div class="custom-select" style="width:98.6%;">
-						<select id="select_day" name="day">
-							<option>Sunday</option>
-							<option selected>Monday</option>
-							<option>Tuesday</option>
-							<option>Wednesday</option>
-							<option>Thursday</option>
-							<option>Friday</option>
-							<option>Saturday</option>
-						</select>
-					</div>
-				</div>
-				<div class="col-25">
-					<input type="time" name="when" id="time_when" value="08:52">
+		</div>
+		<div class="footer-one">
+			<div class="main-container">
+				<div class="fixer-container">
+					<ul>
+						<li><a href="/terms-of-use">Terms of Use</a></li>
+						<li><a href="/privacy-policy">Privacy Policy</a></li>
+					</ul>
 				</div>
 			</div>
-			<div>
-				<button class="button">Reset</button>
-				<input type="submit" value="List Departures">
-			</div>
-			<datalist id="stops">
-				<option>Option 1</option>
-				<option>Option 2</option>
-				<option>Option 3</option>
-			</datalist>
-		</form>
-		<div class="first-departures-image-form-two">
-			<h1 align="center"><i>Note</i></h1>
-			<hr>
-			<p>Please note that the image is static and does not display your route.</p>
-			<hr>
-			<p>Not what you were looking for? Click the button below to go back to the <i>Itinerary Finder</i>.</p>
-			<div>
-				<input type="submit" value="Itinerary Finder">
-			</div>
 		</div>
-    </div>
-</div>
-<div class="footer-one">
-	<div class="main-container">
-		<div class="fixer-container">
-			<ul>
-				<li><a href="/terms-of-use">Terms of Use</a></li>
-				<li><a href="/privacy-policy">Privacy Policy</a></li>
-			</ul>
+		<div class="footer-two">
+			<p>&copy; 2017 New York University Campus Transportation Itinerary Planner</p>
+			<p>All Rights Reserved</p>
+			<img src="miny_wht_on_trans.gif" alt="Made in NY Logo" width="50" height="50">
 		</div>
-	</div>
-</div>
-<div class="footer-two">
-    <p>&copy; 2017 New York University Campus Transportation Itinerary Planner</p>
-    <p>All Rights Reserved</p>
-    <img src="miny_wht_on_trans.gif" alt="Made in NY Logo" width="50" height="50">
-</div>
-<script type="text/javascript" src="custom-select.min.js"></script>
-<script type="text/javascript" src="app.min.js"></script>
-</body>
+		<script type="text/javascript" src="custom-select.min.js"></script>
+		<script type="text/javascript" src="app.min.js"></script>
+	</body>
 </html>
