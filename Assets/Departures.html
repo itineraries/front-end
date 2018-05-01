@@ -21,57 +21,58 @@
 			<li style="float:right"><a class="active" href="">Register / Login</a></li>
 		</ul>
 		<div id="first-departures-image" class="first-departures-image">
-			<div class="first-departures-image-form-one">
+			<div class="first-departures-image-form-one itinerary-options">
 				<p>Select a bus stop and a time to view departure times from that stop after that time and then click or press <i>List Departures</i>.</p>
-				<hr>
-				<form method="get">
-					<center><h1><i>Where</i></h1></center>
-					<div class="row">
-						<div class="col-25">
-							<label for="text-orig">Origin</label>
-						</div>
-						<div class="col-75">
-							<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
-							<!--DT: removed class="custom-select" because this is no longer a select element-->
-							<div style="width:98.6%;">
-								<input name="orig" id="text-orig" type="text" value="" list="stops">
+				<form action="#output" method="get">
+					<h1>Where</h1>
+					<div class="form-table">
+						<label>
+							<span>Origin</span>
+							<div>
+								<select name="orig" id="select-orig">
+									<option selected>Option 1</option>
+									<option>Option 2</option>
+									<option>Option 3</option>
+								</select>
 							</div>
-						</div>
+						</label>
 					</div>
-					<div id="place-footer">
+					<div class="form-actions">
 						<button>Favorite</button>
 					</div>
-					<br><br><br>
-					<hr>
-					<center><h1><i>When</i></h1></center>
-					<div class="row">
-						<div class="col-25">
-							<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
-							<div class="custom-select" style="width:98.6%;">
+					<h1>When</h1>
+					<div class="form-sentence">
+						<label class="container">
+							<input type="radio" name="depart" value="1" id="radio_depart_depart" checked>
+							<span class="checkmark"></span>
+							<span>Depart at</span>
+						</label>
+						<label class="container">
+							<input type="radio" name="depart" value="0" id="radio_depart_arrive">
+							<span class="checkmark"></span>
+							<span>Arrive by</span>
+						</label>
+						<div class="form-sentence-word">
+							<div class="custom-select">
 								<select id="select_day" name="day">
 									<option>Sunday</option>
-									<option selected>Monday</option>
-									<option>Tuesday</option>
+									<option>Monday</option>
+									<option selected>Tuesday</option>
 									<option>Wednesday</option>
 									<option>Thursday</option>
 									<option>Friday</option>
 									<option>Saturday</option>
 								</select>
 							</div>
-						</div>
-						<div class="col-25">
 							<input type="time" name="when" id="time_when" value="08:52">
+							<div id="use-now"><!--
+								The button is added by JavaScript.
+							--></div>
 						</div>
 					</div>
-					<div>
-						<button class="button">Reset</button>
+					<div class="form-actions">
 						<input type="submit" value="List Departures">
 					</div>
-					<datalist id="stops">
-						<option>Option 1</option>
-						<option>Option 2</option>
-						<option>Option 3</option>
-					</datalist>
 				</form>
 				<div class="first-departures-image-form-two">
 					<h1 align="center"><i>Note</i></h1>
@@ -84,6 +85,416 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div id="output">
+			<p>Departures:</p>
+			<ul>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">07:25 AM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">07:50 AM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">08:55 AM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">09:15 AM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">10:20 AM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">10:40 AM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">11:50 AM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">12:10 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">12:30 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">12:50 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">01:25 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">01:45 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">01:50 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">02:10 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">02:35 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">02:55 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">03:00 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">03:20 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">04:15 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">04:35 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">04:30 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							Intermediate stops:
+							<ol>
+								<li>
+									<span class="itinerary-time">04:40 PM on Tuesday:</span>
+									<span class="itinerary-node">Centre Street At Canal Street</span>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="itinerary-time">04:55 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">05:15 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							Intermediate stops:
+							<ol>
+								<li>
+									<span class="itinerary-time">05:25 PM on Tuesday:</span>
+									<span class="itinerary-node">Centre Street At Canal Street</span>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="itinerary-time">05:40 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">05:45 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							Intermediate stops:
+							<ol>
+								<li>
+									<span class="itinerary-time">05:55 PM on Tuesday:</span>
+									<span class="itinerary-node">Centre Street At Canal Street</span>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="itinerary-time">06:10 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">06:05 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							Intermediate stops:
+							<ol>
+								<li>
+									<span class="itinerary-time">06:10 PM on Tuesday:</span>
+									<span class="itinerary-node">Cadman Plaza At Clark Street</span>
+								</li>
+								<li>
+									<span class="itinerary-time">06:25 PM on Tuesday:</span>
+									<span class="itinerary-node">Centre Street At Canal Street</span>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="itinerary-time">06:40 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">06:30 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							Intermediate stops:
+							<ol>
+								<li>
+									<span class="itinerary-time">06:35 PM on Tuesday:</span>
+									<span class="itinerary-node">Cadman Plaza At Clark Street</span>
+								</li>
+								<li>
+									<span class="itinerary-time">06:50 PM on Tuesday:</span>
+									<span class="itinerary-node">Centre Street At Canal Street</span>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="itinerary-time">07:05 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">08:00 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							Intermediate stops:
+							<ol>
+								<li>
+									<span class="itinerary-time">08:05 PM on Tuesday:</span>
+									<span class="itinerary-node">Cadman Plaza At Clark Street</span>
+								</li>
+								<li>
+									<span class="itinerary-time">08:20 PM on Tuesday:</span>
+									<span class="itinerary-node">Centre Street At Canal Street</span>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="itinerary-time">08:35 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">09:10 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							Intermediate stops:
+							<ol>
+								<li>
+									<span class="itinerary-time">09:15 PM on Tuesday:</span>
+									<span class="itinerary-node">Cadman Plaza At Clark Street</span>
+								</li>
+								<li>
+									<span class="itinerary-time">09:30 PM on Tuesday:</span>
+									<span class="itinerary-node">Centre Street At Canal Street</span>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="itinerary-time">09:45 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">09:55 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							Intermediate stops:
+							<ol>
+								<li>
+									<span class="itinerary-time">10:00 PM on Tuesday:</span>
+									<span class="itinerary-node">Cadman Plaza At Clark Street</span>
+								</li>
+								<li>
+									<span class="itinerary-time">10:15 PM on Tuesday:</span>
+									<span class="itinerary-node">Centre Street At Canal Street</span>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="itinerary-time">10:30 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">10:07 PM on Tuesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							Intermediate stops:
+							<ol>
+								<li>
+									<span class="itinerary-time">10:12 PM on Tuesday:</span>
+									<span class="itinerary-node">Cadman Plaza At Clark Street</span>
+								</li>
+								<li>
+									<span class="itinerary-time">10:27 PM on Tuesday:</span>
+									<span class="itinerary-node">Centre Street At Canal Street</span>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="itinerary-time">10:42 PM on Tuesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					Take Route A.
+					<ul>
+						<li>
+							<span class="itinerary-time">07:25 AM on Wednesday:</span>
+							Depart from
+							<span class="itinerary-node">6 MetroTech</span>.
+						</li>
+						<li>
+							<span class="itinerary-time">07:50 AM on Wednesday:</span>
+							Arrive at
+							<span class="itinerary-node">721 Broadway</span>.
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 		<div class="footer-one">
 			<div class="main-container">
