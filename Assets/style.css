@@ -330,8 +330,6 @@ html, body {
 }
 
 .second-home-image-form button, .second-home-image-form input[type=submit] {
-    font-size: 11pt;
-    
     background-color: #333;
     
     border: none;
