@@ -1,4 +1,4 @@
-h1, h2, p, ul, button, input, label, .custom-select, .footer-one, .footer-two {
+h1, h2, p, ul, ol, button, input, label, .custom-select, .footer-one, .footer-two {
     font-family: "Avenir", "Segoe UI", Arial, sans-serif;
 }
 
@@ -1036,4 +1036,57 @@ text-decoration: none;
 
 #select_day + .select-selected {
 	width: 8em;
+}
+
+#output {
+	background: #fff5ee;
+	padding: 0 0 1px;
+	margin: 0 0 -1px;
+}
+
+#output * {
+	font-size: 11pt;
+}
+
+#output > p {
+	background: #57068c;
+	color: #fff;
+	margin: 0 0 15px;
+	padding: 10px;
+	font-size: 32pt;
+}
+
+#output > ol, #output > ul {
+	margin: 0;
+	padding: 0;
+}
+
+#output > * > li {
+	list-style-type: none;
+	background: #eee5de;
+	border-radius: 25px;
+	margin: 0 10px 25px;
+	padding: 10px 25px 25px;
+	font-size: 28pt;
+}
+
+#output > * > li > ol, #output > * > li > ul {
+	background: #fff;
+	padding: 15px 50px;
+	margin: 10px -25px -25px;
+	border-radius: 25px;
+}
+
+#output > * > li > * > li {
+	font-size: 16pt;
+	margin: 10px 0;
+}
+
+#output .itinerary-time {
+	font-weight: bold;
+	background: #eef;
+}
+
+#output .itinerary-node {
+	background: #efe;
 }
