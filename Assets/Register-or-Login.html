@@ -20,44 +20,70 @@
 		<li><a href="/contact">Contact</a></li>
 		<li style="float:right"><a class="active" href="">Register / Login</a></li>
 	</ul>
-	<div class="first-login-image">
-		<div class="first-login-image-form-one">
-			<center><h1><i>Register</i></h1></center>
-			<hr>
-			<p align="center">It's totally free!</p>
+	<div class="first-login-image form-section">
+		<div class="first-login-image-form first-login-image-form-one form-container form-container-single-column">
+			<h1>Register</h1>
+			<p>It's totally free!</p>
 			<form>
-				<input type="text" id="fname" name="fname" placeholder="First name*">
-				<input type="text" id="lname" name="lname" placeholder="Last name*">
-				<input type="text" id="femail" name="femail" placeholder="Email*">
-				<input type="text" id="tpassword" name="tpassword" placeholder="Type a password*">
-				<input type="text" id="rpassword" name="rpassword" placeholder="Retype the password*">
-			</form>
-			<div class="main-container">
-				<div class="fixer-container">
-					<button class="button">Register</button>
+				<div class="form-table">
+					<div>
+						<span>
+							<input type="text" id="fname" name="fname" placeholder="First name*">
+						</span>
+					</div>
+					<div>
+						<span>
+							<input type="text" id="lname" name="lname" placeholder="Last name*">
+						</span>
+					</div>
+					<div>
+						<span>
+							<input type="text" id="femail" name="femail" placeholder="Email*">
+						</span>
+					</div>
+					<div>
+						<span>
+							<input type="text" id="tpassword" name="tpassword" placeholder="Type a password*">
+						</span>
+					</div>
+					<div>
+						<span>
+							<input type="text" id="rpassword" name="rpassword" placeholder="Retype the password*">
+						</span>
+					</div>
 				</div>
-			</div>
-			<br><br><br><br>
-			<hr>
-			<p align="center">* indicates a required field</p>
-		</div>
-		<div class="first-login-image-form-two">
-			<center><h1><i>Login</i></h1></center>
-			<hr>
-			<p align="center">Welcome back!</p>
-			<form>
-				<input type="text" id="lemail" name="lemail" placeholder="Email*">
-				<input type="text" id="password" name="password" placeholder="Password*">
+				<div class="form-actions">
+					<input type="submit" value="Register">
+				</div>
 			</form>
-			<p align="right"><a href="/request-password-reset">Forgot password?</a></p>
-			<div class="main-container">
-				<div class="fixer-container">
+			<hr>
+			<p>* indicates a required field</p>
+		</div>
+		<div class="first-login-image-form first-login-image-form-two form-container form-container-single-column">
+			<h1>Login</h1>
+			<p>Welcome back!</p>
+			<form>
+				<div class="form-table">
+					<div>
+						<span>
+							<input type="text" id="lemail" name="lemail" placeholder="Email*">
+						</span>
+					</div>
+					<div>
+						<span>
+							<input type="text" id="password" name="password" placeholder="Password*">
+						</span>
+					</div>
+				</div>
+				<div class="form-actions">
+					<p><a href="/request-password-reset">Forgot password?</a></p>
+				</div>
+				<div class="form-actions">
 					<button class="button">Login</button>
 				</div>
-			</div>
-			<br><br><br><br>
+			</form>
 			<hr>
-			<p align="center"><sup>*</sup> indicates a required field</p>
+			<p>* indicates a required field</p>
 		</div>
 	</div>
 	<div class="footer-one">
